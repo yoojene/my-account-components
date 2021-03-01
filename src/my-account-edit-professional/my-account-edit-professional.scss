@@ -1,0 +1,83 @@
+header {
+  --header-content-height: 4em;
+}
+
+.edit-professional {
+  @media screen and (min-width: $mobile-max-width) {
+    width: 540px;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: 600;
+    margin-top: #{$base-size * 2};
+  }
+
+  &__special-chars {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.42;
+    margin-bottom: #{$base-size * 3};
+  }
+
+  &__or {
+    color: $primary-color;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: #{$base-size * 3};
+  }
+
+  &__designation-form-field {
+    margin-bottom: #{$base-size * 2};
+  }
+
+  &__specialty-state-form-field {
+    margin-bottom: #{$base-size * 3};
+  }
+
+  &__tabs-cancel {
+    display: flex;
+    justify-content: flex-start;
+    color: $primary-color-dark;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    font-style: normal;
+    margin-top: #{$base-size};
+  }
+  &__tabs-title {
+    margin-bottom: #{$base-size * 2};
+  }
+
+  &__saved-msg {
+    color: $primary-color;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  &__err-msg {
+    color: $color-danger;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .caption {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.42;
+    margin-bottom: #{$base-size * 3};
+    margin-block-start: 0;
+  }
+
+  .divider {
+    color: $primary-color;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: #{$base-size * 3};
+  }
+}

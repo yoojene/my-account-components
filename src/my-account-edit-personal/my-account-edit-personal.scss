@@ -1,0 +1,50 @@
+header {
+  --header-content-height: 4em;
+}
+
+.edit-personal {
+  margin-bottom: $base-size * 2;
+
+  @media screen and (min-width: $mobile-max-width) {
+    width: 540px;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: 600;
+  }
+
+  &__tabs-edit {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 16px;
+  }
+
+  &__tabs-cancel {
+    display: flex;
+    justify-content: flex-start;
+    color: $primary-color-dark;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    font-style: normal;
+    margin-top: #{$base-size};
+  }
+
+  &__saved-msg {
+    color: #{$primary-color};
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  &__error-msg {
+    color: $color-danger;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__form {
+    margin-bottom: $base-size * 2;
+  }
+}

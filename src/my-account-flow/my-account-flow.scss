@@ -1,0 +1,78 @@
+step {
+  --step-padding: #{$base-size * 2} #{$base-size * 3} #{$base-size * 3} #{$base-size *
+    3};
+}
+
+step-controller {
+  --notification--font-size: 12px;
+  --notifications-padding: 24px 24px 0 24px;
+  --notification-padding: 0;
+}
+
+.my-account {
+  ul {
+    list-style-type: none;
+  }
+
+  &__tabs {
+    margin-top: #{$base-size * 3};
+  }
+
+  &__tabs-section {
+    margin-bottom: #{$base-size * 3};
+  }
+
+  &__tabs-edit {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: #{$base-size};
+    color: $primary-color-dark;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    font-style: normal;
+  }
+
+  &__tabs-cancel {
+    display: flex;
+    justify-content: flex-start;
+    color: $primary-color-dark;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    font-style: normal;
+    margin-top: #{$base-size};
+  }
+
+  &__tabs-title {
+    font-weight: 600;
+    margin-bottom: #{$base-size * 2};
+  }
+  &__address-tabs-title {
+    font-weight: 600;
+    margin-bottom: #{$base-size * 2};
+  }
+  &__address-item-text {
+    line-height: 1.57;
+  }
+
+  &__tabs-item-text:not(:last-child) {
+    margin-bottom: #{$base-size * 2};
+  }
+  &__tabs-license-item-text:not(:last-child) {
+    margin-bottom: #{$base-size * 3};
+  }
+
+  &__tabs-subtitle {
+    font-size: 14px;
+    color: #717171;
+    line-height: 1.57;
+  }
+
+  &__info-msg {
+    color: $primary-color;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+  }
+}
